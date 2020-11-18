@@ -29,6 +29,11 @@ class Product {
       Product(id: id ?? _id, name: name ?? _name, color: color ?? _color);
 
   @override
+  String toString() {
+    return "Product: ID = $id, Name = $name";
+  }
+
+  @override
   bool operator ==(Object other) =>
       other is Product &&
       other._id == _id &&
