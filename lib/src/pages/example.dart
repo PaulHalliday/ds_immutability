@@ -44,7 +44,7 @@ class _ExamplePageState extends State<ExamplePage> {
   }
 
   void _randomProductData() {
-    final randomNumber = _random.nextInt(12);
+    final randomNumber = _random.nextInt(13);
     setState(
       () => _product = _product.copyWith(
         name: "iPhone $randomNumber",
