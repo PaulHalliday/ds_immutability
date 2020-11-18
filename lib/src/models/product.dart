@@ -22,19 +22,4 @@ class Product {
           id: id ?? this.id,
           name: name ?? this.name,
           color: color ?? this.color);
-
-  @override
-  String toString() {
-    return "Product: ID = $id, Name = $name";
-  }
-
-  @override
-  bool operator ==(Object other) =>
-      other is Product &&
-      other.id == id &&
-      other.name == name &&
-      other.color == color;
-
-  @override
-  int get hashCode => hashValues(id, name, color);
 }

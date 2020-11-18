@@ -15,9 +15,8 @@ class _ExamplePageState extends State<ExamplePage> {
   @override
   void initState() {
     super.initState();
-
-    _random = Random();
     _product = Product(id: "1", name: "iPhone 12");
+    _random = Random();
   }
 
   @override
